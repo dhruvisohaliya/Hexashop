@@ -365,7 +365,7 @@ body {
   transform: translateY(-80px);
 }
  .item .down-content {
-  padding-top: 30px;
+  padding:30px 15px 0px;
   position: relative;
   z-index: 3;
   background-color: #fff;
