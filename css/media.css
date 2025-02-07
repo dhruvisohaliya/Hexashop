@@ -10,11 +10,7 @@
   }
 
   /* ------------------section 2 men's------------------------------- */
-  .icon {
-    position: absolute;
-    left: 35px;
-    transition: 0.3s ease-in-out;
-  }
+
 
   #mens.owl-carousel .owl-nav button.owl-prev,
   #womens.owl-carousel .owl-nav button.owl-prev {
@@ -80,11 +76,7 @@
   }
 
   /* --------------------------section 2 men's------------------------------------------- */
-  .icon {
-    position: absolute;
-    left: 52px;
-    transition: 0.3s ease-in-out;
-  }
+  
 
   .men {
     padding: 50px 0px;
@@ -258,11 +250,7 @@
   }
 
   /* -----------------------section 2 men's-------------------------------------- */
-  .icon {
-    position: absolute;
-    left: 10px;
-    transition: 0.3s ease-in-out;
-  }
+
 
   .men {
     padding: 50px 0px;
@@ -438,11 +426,7 @@
   }
 
   /* -----------------section 2 mens's------------------------------ */
-  .icon {
-    position: absolute;
-    left: 125px;
-    transition: 0.3s ease-in-out;
-  }
+ 
 
   .men {
     padding: 50px 0px;
@@ -591,11 +575,6 @@
     border-bottom: 3px dotted #eee;
   }
 
-  .icon {
-    position: absolute;
-    left: 112px;
-    transition: 0.3s ease-in-out;
-  }
 
   .down-content .d-flex {
     justify-content: none !important;
