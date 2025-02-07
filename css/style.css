@@ -315,24 +315,48 @@ body {
   position: relative;
   overflow: hidden;
 }
-.icon{
-  position: absolute;
-  left:70px;
-  transition: 0.3s ease-in-out;
+.item {
+  padding: 0px;
+  margin-bottom: 30px;
+ 
+  
 }
-.icon li a  {
+.item .img-box img{
+  padding:0px 15px;
+}
+
+.icons {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  bottom: -67px;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.img-box:hover .icons {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-80px);
+}
+.icons{
+  padding: 0px 15px;
+}
+.icons ul li {
+  display: inline;
+  margin: 0px 10px;
+}
+
+.icons ul li a {
   width: 50px;
   height: 50px;
   text-align: center;
   line-height: 50px;
   display: inline-block;
-  color: #2a2a2a;
-  background-color: #fff;
- 
-}
- .icon li {
-  display: inline;
-  margin: 0px 10px;
+  color: rgb(42, 42, 42);
+  background-color: rgb(255, 255, 255);
 }
 .icon li a i{
   font-size: 14px;
