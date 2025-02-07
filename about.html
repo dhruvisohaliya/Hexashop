@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about-Hexashop</title>
+
+    <!-- https://templatemo.com/live/templatemo_571_hexashop -->
+
+    <!-- ---------------bootstrap file---------------------------------- -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- -----------------------icon file----------------------------------------- -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- -----------------------owl carousel file----------------------------------- -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- -------------------css custom file------------------------------- -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pro_detail.css">
+
+    <!-- --------------------media file------------------------------------- -->
+    <link rel="stylesheet" href="css/media.css">
+
+    <style>
+        .single_product2 {
+            background-image: url('./assets/about-us-page-heading.jpg');
+            margin-top: 160px;
+            margin-bottom: 30px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        /* ---------------------about us------------------------------ */
+        .about-us {
+            margin-top: 80px;
+        }
+
+        .about-us .right-cont {
+            margin-left: 30px;
+        }
+
+        .about-us .right-cont h4 {
+            font-size: 34px;
+            font-weight: 700;
+            color: #2a2a2a;
+        }
+
+        .about-us .left-image img {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .about-us .right-cont span {
+            font-size: 14px;
+            color: #aaaaaa;
+            font-weight: 500;
+            display: block;
+            margin-top: 25px;
+        }
+
+        .about-us .right-cont p {
+            font-size: 14px;
+            color: #aaaaaa;
+            font-weight: 500;
+            display: block;
+            margin-top: 25px;
+        }
+
+        .about-us .right-cont ul {
+            border-top: 3px dotted #eee;
+            margin-top: 30px;
+            padding-top: 30px;
+        }
+
+        .about-us .right-cont ul li {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+
+        .about-us .right-cont ul li a {
+            width: 44px;
+            height: 44px;
+            background-color: #2a2a2a;
+            color: #fff;
+            display: inline-block;
+            text-align: center;
+            line-height: 44px;
+            border-radius: 50%;
+            transition: all .5s;
+        }
+
+        .about-us .right-cont ul li a:hover {
+            background-color: #eee;
+            color: #2a2a2a;
+        }
+
+        /* -----------------------------our amazing Team----------------------------------- */
+        .team {
+            margin-top: 100px;
+            padding-top: 90px;
+            padding-bottom: 90px;
+            border-top: 3px dotted #eee;
+        }
+
+        .team .section-heading,
+        .our-service .section-heading  {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .team .section-heading h2,
+        .our-service .section-heading h2  {
+            margin-bottom: 10px;
+            font-size: 34px;
+            font-weight: 700;
+            color: #2a2a2a;
+        }
+
+        .section-heading span,
+        .section-heading span {
+            font-size: 14px;
+            color: #a1a1a1;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .team .team-member img {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .team-member {
+            position: relative;
+        }
+
+        .team-layer {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            opacity: 0;
+            transition: all .3s;
+        }
+
+        .team-layer:hover {
+            opacity: 1;
+        }
+
+        .social-icon {
+            position: absolute;
+            top: 50%;
+            text-align: center;
+            width: 100%;
+            transform: translateY(-22px);
+        }
+
+        .social-icon li:last-child {
+            margin-right: 0;
+        }
+
+        .social-icon li {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .social-icon li a {
+            width: 44px;
+            height: 44px;
+            background-color: #fff;
+            color: #2a2a2a;
+            display: inline-block;
+            text-align: center;
+            line-height: 44px;
+            border-radius: 50%;
+            transition: all .5s;
+        }
+
+        .social-icon li a:hover {
+            background-color: #2a2a2a;
+            color: #fff;
+        }
+
+        .down {
+            text-align: center;
+            padding-top: 25px;
+        }
+
+        .down span {
+            font-size: 14px;
+            color: rgb(161, 161, 161);
+            font-weight: 500;
+            display: block;
+            font-style: italic;
+        }
+
+        .down h4 {
+            font-size: 24px;
+            color: rgb(42, 42, 42);
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        /* ----------------------our-service----------------------------------- */
+        .our-service {
+            padding-top: 90px;
+            padding-bottom: 90px;
+            border-top: 3px dotted rgb(238, 238, 238);
+            border-bottom: 3px dotted rgb(238, 238, 238);
+        }
+
+        .our-service .service-item {
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .our-service .service-item h4 {
+            font-size: 24px;
+            font-weight: 700;
+            color: rgb(42, 42, 42);
+            margin-bottom: 20px;
+        }
+
+        .service-item p {
+            font-size: 14px;
+            line-height: 25px;
+            color: rgb(42, 42, 42);
+            margin-bottom: 25px;
+        }
+
+        .service-item img {
+            width: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-auto" style="padding-right: 15px;">
+                    <div class="logo-img d-lg-block d-md-block d-sm-non d-none">
+                        <img src="assets/logo.png" alt="" class="">
+                    </div>
+                </div>
+                <div class="col-auto nav" style="padding-left: 15px; ">
+                    <ul class="d-lg-flex d-md-flex d-sm-none d-none justify-conten-between align-items-center ps-0
+                        mb-0 main-menu">
+                        <li><a href="index.html" id="menu-home" class="act">Home</a></li>
+                        <li><a href="#men" id="menu-men" class="act">Men's</a></li>
+                        <li><a href="#women" id="menu-women" class="act">Women's</a></li>
+                        <li><a href="#kid" id="menu-kid" class="act">Kid's</a></li>
+                        <li><a href="#" id="menu-pages" class="act">Pages <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="product.html">Products</a></li>
+                                <li><a href="pro_detail.html">Single Product</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#explore" id="menu-explore">Explore</a></li>
+                    </ul>
+                </div>
+                <div class="head">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="logo-img">
+                            <img src="assets/logo.png" alt="" class="">
+                        </div>
+                        <div class="toggle_icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                    <ul class="ps-0 mob-menu">
+                        <li><a href="index.html" id="menu-home" class="active">Home</a></li>
+                        <li><a href="#men" id="menu-men">Men's</a></li>
+                        <li><a href="#women" id="menu-women">Women's</a></li>
+                        <li><a href="#kid" id="menu-kid">Kid's</a></li>
+                        <li><a href="#" id="menu-pages" class="text-center">
+                                <span>Pages</span>
+                                <i class="fa-solid fa-angle-down" style="float: right;"></i></a>
+                            <ul class="mob-submenu ps-0">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="product.html">Products</a></li>
+                                <li><a href="pro_detail.html">Single Product</a></li>
+                                <li class="pb-0 border-none"><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#explore" id="menu-explore">Explore</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ----------------------------section single product page-------------------------------------------- -->
+    <section class="single_product2">
+        <div class="container">
+            <div class="single_tex">
+                <h2>About Our Company</h2>
+                <span>Awesome &amp; Creative HTML CSS layout by TemplateMo</span>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------------about us------------------------------------------- -->
+    <section class="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" style="padding: 0px 15px;">
+                    <div class="left-image">
+                        <img src="assets/about-left-image.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6" style="padding: 0px 15px;">
+                    <div class="right-cont">
+                        <h4>About Us &amp; Our Skills</h4>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            kon tempor incididunt ut labore.</span>
+                        <div class="quote">
+                            <i class="fa fa-quote-left"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiuski smod kon
+                                tempor incididunt ut labore.</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod kon tempor
+                            incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip.</p>
+
+                        <ul class="ps-0">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -----------------------------Our Amazing Team-------------------------------------------- -->
+    <section class="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Our Amazing Team</h2>
+                        <span>Details to details is what makes Hexashop different from the other themes.</span>
+                    </div>
+                </div>
+                <div class="col-lg-4" style="padding: 0px 15px;">
+                    <div class="team-member">
+                        <img src="assets/team-member-01.jpg" alt="">
+                        <div class="team-layer">
+                            <div class="social-icon">
+                                <ul class="ps-0">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="down">
+                        <h4>Ragnar Lodbrok</h4>
+                        <span>Product Caretaker</span>
+                    </div>
+                </div>
+                <div class="col-lg-4" style="padding: 0px 15px;">
+                    <div class="team-member">
+                        <img src="assets/team-member-02.jpg" alt="">
+                        <div class="team-layer">
+                            <div class="social-icon">
+                                <ul class="ps-0">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="down">
+                        <h4>Ragnar Lodbrok</h4>
+                        <span>Product Caretaker</span>
+                    </div>
+                </div>
+                <div class="col-lg-4" style="padding: 0px 15px;">
+                    <div class="team-member">
+                        <img src="assets/team-member-03.jpg" alt="">
+                        <div class="team-layer">
+                            <div class="social-icon">
+                                <ul class="ps-0">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="down">
+                        <h4>Ragnar Lodbrok</h4>
+                        <span>Product Caretaker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -----------------------------our service-------------------------------------------- -->
+    <section class="our-service">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Our Services</h2>
+                        <span>Details to details is what makes Hexashop different from the other themes.</span>
+                    </div>
+                </div>
+                <div class="col-lg-4" style="padding: 0px 15px;">
+                    <div class="service-item">
+                        <h4>Synther Vaporware</h4>
+                        <p>Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed do eiusmod temp incididunt
+                            ut labore, et dolore quis ipsum suspend.</p>
+                        <img src="assets/service-01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4" style="padding: 0px 15px;">
+                    <div class="service-item">
+                        <h4>Locavore Squidward</h4>
+                        <p>Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed do eiusmod temp incididunt
+                            ut labore, et dolore quis ipsum suspend.</p>
+                        <img src="assets/service-02.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4" style="padding: 0px 15px;">
+                    <div class="service-item">
+                        <h4>Health Gothfam</h4>
+                        <p>Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed do eiusmod temp incididunt
+                            ut labore, et dolore quis ipsum suspend.</p>
+                        <img src="assets/service-03.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------------------------section 7 subscribe---------------------------------------- -->
+    <section class="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="sub-head">
+                        <h2>By Subscribing To Our Newsletter You Can Get 30% Off</h2>
+                        <span>Details to details is what makes Hexashop different from the other themes.</span>
+                    </div>
+
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <fieldset>
+                                    <input name="name" type="text" id="name" placeholder="Your Name" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-5">
+                                <fieldset>
+                                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*"
+                                        placeholder="Your Email Address" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-2">
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="main-dark-button">
+                                        <i class="fa fa-paper-plane"></i></button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="ps-0">
+                                <li>Store Location:<br><span>Sunny Isles Beach, FL 33160, United States</span></li>
+                                <li>Phone:<br><span>010-020-0340</span></li>
+                                <li>Office Location:<br><span>North Miami Beach</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>Work Hours:<br><span>07:30 AM - 9:30 PM Daily</span></li>
+                                <li>Email:<br><span>info@company.com</span></li>
+                                <li>Social Media:<br><span><a href="#">Facebook</a>, <a href="#">Instagram</a>,
+                                        <a href="#">Behance</a>, <a href="#">Linkedin</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------footer----------------------------------- -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="address">
+                        <div class="logo">
+                            <img src="assets/white-logo.png" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a>
+                            </li>
+                            <li><a href="#">hexashop@company.com</a></li>
+                            <li><a href="#">010-020-0340</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Shopping &amp; Categories</h4>
+                    <ul>
+                        <li><a href="#">Men’s Shopping</a></li>
+                        <li><a href="#">Women’s Shopping</a></li>
+                        <li><a href="#">Kid's Shopping</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Homepage</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Help &amp; Information</h4>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Tracking ID</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <div class="sub-footer">
+                        <p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved.
+                            <br>Design: <a href="#">TemplateMo</a>
+                            <br>Distributed By: <a href="#">ThemeWagon</a>
+                        </p>
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- ---------------Js------------------ -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+
+
+        $(document).ready(function () {
+            $('.mob-menu , .mob-submenu').hide()
+
+            $('.toggle_icon').click(function () {
+                $('.mob-menu').slideToggle()
+                $(this).find('i').toggleClass('fa-bar fa-times')
+            })
+
+            $('.mob-menu>li> a i').click(function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                $(this).parent().next('.mob-submenu').slideToggle()
+            })
+            // -------------------------------------------------
+            $(window).scroll(function () {
+                var h = $(window).scrollTop()
+                if (h > 150) {
+                    $('header').addClass('fix-header')
+
+                } else {
+                    $('header').removeClass('fix-header')
+
+                }
+            })
+            // --------------men---------------------------
+            $("#mens").owlCarousel({
+                items: 3,
+                loop: true,
+                nav: true,
+                navText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>'],
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            })
+            // --------------Women---------------------------
+            $("#womens").owlCarousel({
+                items: 3,
+                loop: true,
+                nav: true,
+                navText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>'],
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            })
+            // --------------kids--------------------------
+            $("#kids").owlCarousel({
+                items: 3,
+                loop: true,
+                nav: true,
+                navText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>'],
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            })
+            //scroll to header fix code//------------------------
+            $('#menu-home').first().addClass('active');
+
+        })
+
+    </script>
+</body>
+
+</html>

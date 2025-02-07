@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product-Hexashop</title>
+
+    <!-- https://templatemo.com/live/templatemo_571_hexashop -->
+
+    <!-- ---------------bootstrap file---------------------------------- -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- -----------------------icon file----------------------------------------- -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- -----------------------owl carousel file----------------------------------- -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- -------------------css custom file------------------------------- -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pro_detail.css">
+
+    <!-- --------------------media file------------------------------------- -->
+    <link rel="stylesheet" href="css/media.css">
+
+
+    <style>
+        .section-heading {
+            margin-top: 80px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .section-heading h2 {
+            margin-bottom: 10px;
+            font-size: 34px;
+            font-weight: 700;
+            color: #2a2a2a;
+        }
+
+        .section-heading span {
+            font-size: 14px;
+            color: #a1a1a1;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .item {
+            padding: 0px;
+            margin-bottom: 30px;
+        }
+
+        .icons {
+            position: absolute;
+            z-index: 2;
+            text-align: center;
+            bottom: -67px;
+            width: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.5s;
+        }
+
+        .img-box:hover .icons {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-80px);
+        }
+
+        .icons ul li {
+            display: inline;
+            margin: 0px 10px;
+        }
+
+        .icons ul li a {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            display: inline-block;
+            color: rgb(42, 42, 42);
+            background-color: rgb(255, 255, 255);
+        }
+
+        .pagination {
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .pagination ul {
+            text-align: center;
+            width: 100%;
+        }
+
+        .pagination ul li {
+            display: inline;
+            margin: 0px 5px;
+        }
+
+        .pagination ul li a {
+            width: 44px;
+            height: 44px;
+            display: inline-block;
+            text-align: center;
+            line-height: 44px;
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(42, 42, 42);
+            border: 1px solid rgb(42, 42, 42);
+        }
+        .pagination ul li a:hover{
+            background-color: rgb(42, 42, 42) ;
+            color: #fff;
+        }
+        ul li.active a {
+            background-color: rgb(42, 42, 42);
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-auto" style="padding-right: 15px;">
+                    <div class="logo-img d-lg-block d-md-block d-sm-non d-none">
+                        <img src="assets/logo.png" alt="" class="">
+                    </div>
+                </div>
+                <div class="col-auto nav" style="padding-left: 15px; ">
+                    <ul class="d-lg-flex d-md-flex d-sm-none d-none justify-conten-between align-items-center ps-0
+                        mb-0 main-menu">
+                        <li><a href="index.html" id="menu-home" class="act">Home</a></li>
+                        <li><a href="#men" id="menu-men" class="act">Men's</a></li>
+                        <li><a href="#women" id="menu-women" class="act">Women's</a></li>
+                        <li><a href="#kid" id="menu-kid" class="act">Kid's</a></li>
+                        <li><a href="#" id="menu-pages" class="act">Pages <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="product.html">Products</a></li>
+                                <li><a href="pro_detail.html">Single Product</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#explore" id="menu-explore">Explore</a></li>
+                    </ul>
+                </div>
+                <div class="head">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="logo-img">
+                            <img src="assets/logo.png" alt="" class="">
+                        </div>
+                        <div class="toggle_icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                    <ul class="ps-0 mob-menu">
+                        <li><a href="index.html" id="menu-home" class="active">Home</a></li>
+                        <li><a href="#men" id="menu-men">Men's</a></li>
+                        <li><a href="#women" id="menu-women">Women's</a></li>
+                        <li><a href="#kid" id="menu-kid">Kid's</a></li>
+                        <li><a href="#" id="menu-pages" class="text-center">
+                                <span>Pages</span>
+                                <i class="fa-solid fa-angle-down" style="float: right;"></i></a>
+                            <ul class="mob-submenu ps-0">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="product.html">Products</a></li>
+                                <li><a href="pro_detail.html">Single Product</a></li>
+                                <li class="pb-0 border-none"><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#explore" id="menu-explore">Explore</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ----------------------------our product-------------------------------------------- -->
+    <section class="single_product">
+        <div class="container">
+            <div class="single_tex">
+                <h2>Check Our Products</h2>
+                <span>Awesome &amp; Creative HTML CSS layout by TemplateMo</span>
+            </div>
+        </div>
+    </section>
+    <!-- -----------------------------section 2 Men's-------------------------------------------- -->
+    <section class="men p-0 border border-0" id="men">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Our Latest Products</h2>
+                        <span>Check out all of our products.</span>
+                    </div>
+                </div>
+                <div class="col-lg-4" style="padding:0px 15px;">
+                    <div class="item">
+                        <div class="img-box">
+                            <img src="assets/men-01.jpg" alt="">
+                            <div class="icons">
+                                <ul class=" ps-0">
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-eye"></i></a></li>
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-star"></i></a></li>
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <div class="d-flex justify-content-between">
+                                <h4>Classic Spring</h4>
+                                <ul class="stars d-flex ps-0">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <span>$120.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" style="padding:0px 15px;">
+                    <div class="item">
+                        <div class="img-box">
+                            <img src="assets/men-02.jpg" alt="">
+                            <div class="icons">
+                                <ul class="ps-0">
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-eye"></i></a></li>
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-star"></i></a></li>
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <div class="d-flex justify-content-between ">
+                                <h4>Air Force 1 X</h4>
+                                <ul class="stars d-flex ps-0">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <span>$90.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" style="padding:0px 15px;">
+                    <div class="item">
+                        <div class="img-box">
+                            <img src="assets/men-03.jpg" alt="">
+                            <div class="icons">
+                                <ul class=" ps-0">
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-eye"></i></a></li>
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-star"></i></a></li>
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <div class="d-flex justify-content-between">
+                                <h4>Love Nana ‘20</h4>
+                                <ul class="stars d-flex ps-0">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <span>$150.00</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -----------------------------section 3 women's-------------------------------------------- -->
+    <section class="men p-0 border border-0" id="women">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4" style="padding:0px 15px;">
+                    <div class="item">
+                        <div class="img-box">
+                            <img src="assets/women-01.jpg" alt="">
+                            <div class="icons">
+                                <ul class="ps-0">
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-eye"></i></a></li>
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-star"></i></a></li>
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <div class="d-flex justify-content-between">
+                                <h4>New Green Jacket</h4>
+                                <ul class="stars d-flex ps-0">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <span>$75.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" style="padding:0px 15px;">
+                    <div class="item">
+                        <div class="img-box">
+                            <img src="assets/women-02.jpg" alt="">
+                            <div class="icons">
+                                <ul class=" ps-0">
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-eye"></i></a></li>
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-star"></i></a></li>
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <div class="d-flex justify-content-between">
+                                <h4>Classic Dress</h4>
+                                <ul class="stars d-flex ps-0">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <span>$45.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" style="padding:0px 15px;">
+                    <div class="item">
+                        <div class="img-box">
+                            <img src="assets/women-03.jpg" alt="">
+                            <div class="icons">
+                                <ul class="ps-0">
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-eye"></i></a></li>
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-star"></i></a></li>
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <div class="d-flex justify-content-between">
+                                <h4>Spring Collection</h4>
+                                <ul class="stars d-flex ps-0">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <span>$130.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -----------------------------section 4 kids-------------------------------------------- -->
+    <section class="men p-0 border border-0" id="kid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4" style="padding:0px 15px;">
+                    <div class="item">
+                        <div class="img-box">
+                            <img src="assets/kid-01.jpg" alt="">
+                            <div class="icons">
+                                <ul class="ps-0">
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-eye"></i></a></li>
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-star"></i></a></li>
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <div class="d-flex justify-content-between">
+                                <h4>School Collection</h4>
+                                <ul class="stars d-flex ps-0">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <span>$80.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" style="padding:0px 15px;">
+                    <div class="item">
+                        <div class="img-box">
+                            <img src="assets/kid-02.jpg" alt="">
+                            <div class="icons">
+                                <ul class=" ps-0">
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-eye"></i></a></li>
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-star"></i></a></li>
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <div class="d-flex justify-content-between">
+                                <h4>Summer Cap</h4>
+                                <ul class="stars d-flex ps-0">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <span>$12.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" style="padding:0px 15px;">
+                    <div class="item">
+                        <div class="img-box">
+                            <img src="assets/kid-03.jpg" alt="">
+                            <div class="icons">
+                                <ul class=" ps-0">
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-eye"></i></a></li>
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-star"></i></a></li>
+                                    <li><a href="pro_detail.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <div class="d-flex justify-content-between">
+                                <h4>Classic Kid</h4>
+                                <ul class="stars d-flex ps-0">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <span>$30.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="pagination">
+                        <ul>
+                            <li>
+                                <a href="#">1</a>
+                            </li>
+                            <li class="active">
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a href="#">4</a>
+                            </li>
+                            <li>
+                                <a href="#">&gt;</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ------------------------footer----------------------------------- -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="address">
+                        <div class="logo">
+                            <img src="assets/white-logo.png" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a>
+                            </li>
+                            <li><a href="#">hexashop@company.com</a></li>
+                            <li><a href="#">010-020-0340</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Shopping &amp; Categories</h4>
+                    <ul>
+                        <li><a href="#">Men’s Shopping</a></li>
+                        <li><a href="#">Women’s Shopping</a></li>
+                        <li><a href="#">Kid's Shopping</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Homepage</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Help &amp; Information</h4>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Tracking ID</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <div class="sub-footer">
+                        <p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved.
+                            <br>Design: <a href="#">TemplateMo</a>
+                            <br>Distributed By: <a href="#">ThemeWagon</a>
+                        </p>
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- ---------------Js------------------ -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+
+
+        $(document).ready(function () {
+            $('.mob-menu , .mob-submenu').hide()
+
+            $('.toggle_icon').click(function () {
+                $('.mob-menu').slideToggle()
+                $(this).find('i').toggleClass('fa-bar fa-times')
+            })
+
+            $('.mob-menu>li> a i').click(function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                $(this).parent().next('.mob-submenu').slideToggle()
+            })
+            // -------------------------------------------------
+            $(window).scroll(function () {
+                var h = $(window).scrollTop()
+                if (h > 150) {
+                    $('header').addClass('fix-header')
+
+                } else {
+                    $('header').removeClass('fix-header')
+
+                }
+            })
+
+            //scroll to header fix code//------------------------
+            $('#menu-home').first().addClass('active');
+
+        })
+
+    </script>
+</body>
+
+</html>

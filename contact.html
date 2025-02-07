@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Hexashop</title>
+
+    <!-- https://templatemo.com/live/templatemo_571_hexashop -->
+
+    <!-- ---------------bootstrap file---------------------------------- -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- -----------------------icon file----------------------------------------- -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- -----------------------owl carousel file----------------------------------- -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- -------------------css custom file------------------------------- -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pro_detail.css">
+
+    <!-- --------------------media file------------------------------------- -->
+    <link rel="stylesheet" href="css/media.css">
+
+    <style>
+        .single_product2 {
+            background-image: url('./assets/about-us-page-heading.jpg');
+            margin-top: 160px;
+            margin-bottom: 30px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        /* ---------------------map---------------------------------- */
+        .map {
+            margin-top: 90px;
+            border-bottom: 3px dotted #eee;
+            padding-bottom: 90px;
+        }
+
+        .areas {
+            margin-right: 30px;
+        }
+
+        .map .section-heading {
+            margin-bottom: 40px;
+        }
+
+        .section-heading h2 {
+            font-size: 34px;
+            font-weight: 700;
+            color: #2a2a2a;
+        }
+
+        .section-heading span {
+            font-size: 14px;
+            color: #a1a1a1;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .map form input {
+            width: 100%;
+            height: 44px;
+            line-height: 44px;
+            padding: 0px 15px;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 500;
+            color: #aaa;
+            border-radius: 0px;
+            border: 1px solid #7a7a7a;
+            box-shadow: none;
+        }
+
+        .map form textarea {
+            width: 100%;
+            height: 140px;
+            margin-top: 30px;
+            margin-bottom: 25px;
+            line-height: 44px;
+            padding: 0px 15px;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 500;
+            color: #aaa;
+            border-radius: 0px;
+            border: 1px solid #7a7a7a;
+            box-shadow: none;
+        }
+
+        .map form button {
+            width: 44px;
+            height: 44px;
+            display: inline-block;
+            text-align: center;
+            line-height: 44px;
+            background-color: #2a2a2a;
+            box-shadow: none;
+            border: 1px solid transparent;
+            color: #fff;
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-auto" style="padding-right: 15px;">
+                    <div class="logo-img d-lg-block d-md-block d-sm-non d-none">
+                        <img src="assets/logo.png" alt="" class="">
+                    </div>
+                </div>
+                <div class="col-auto nav" style="padding-left: 15px; ">
+                    <ul class="d-lg-flex d-md-flex d-sm-none d-none justify-conten-between align-items-center ps-0
+                        mb-0 main-menu">
+                        <li><a href="index.html" id="menu-home" class="act">Home</a></li>
+                        <li><a href="#men" id="menu-men" class="act">Men's</a></li>
+                        <li><a href="#women" id="menu-women" class="act">Women's</a></li>
+                        <li><a href="#kid" id="menu-kid" class="act">Kid's</a></li>
+                        <li><a href="#" id="menu-pages" class="act">Pages <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="product.html">Products</a></li>
+                                <li><a href="pro_detail.html">Single Product</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#explore" id="menu-explore">Explore</a></li>
+                    </ul>
+                </div>
+                <div class="head">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="logo-img">
+                            <img src="assets/logo.png" alt="" class="">
+                        </div>
+                        <div class="toggle_icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                    <ul class="ps-0 mob-menu">
+                        <li><a href="index.html" id="menu-home" class="active">Home</a></li>
+                        <li><a href="#men" id="menu-men">Men's</a></li>
+                        <li><a href="#women" id="menu-women">Women's</a></li>
+                        <li><a href="#kid" id="menu-kid">Kid's</a></li>
+                        <li><a href="#" id="menu-pages" class="text-center">
+                                <span>Pages</span>
+                                <i class="fa-solid fa-angle-down" style="float: right;"></i></a>
+                            <ul class="mob-submenu ps-0">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="product.html">Products</a></li>
+                                <li><a href="pro_detail.html">Single Product</a></li>
+                                <li class="pb-0 border-none"><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#explore" id="menu-explore">Explore</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ----------------------------section single product page-------------------------------------------- -->
+    <section class="single_product2">
+        <div class="container">
+            <div class="single_tex">
+                <h2>Contact Us</h2>
+                <span>Awesome &amp; Creative HTML CSS layout by TemplateMo</span>
+            </div>
+        </div>
+    </section>
+    <!-- --------------------------------map----------------------------------------- -->
+    <section class="map">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="areas">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90186.
+                    37207676383!2d-80.13495239500924!3d25.9317678710111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                    1!3m3!1m2!1s0x88d9ad1877e4a82d%3A0xa891714787d1fb5e!2sPier%20Park!5e1!3m2!1sen!2sth!4v1637512439384!5m2!
+                    1sen!2sth" width="100%" height="400px" frameborder="0" style="border:0"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-heading">
+                        <h2>Say Hello. Don't Be Shy!</h2>
+                        <span>Details to details is what makes Hexashop different from the other themes.</span>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <fieldset>
+                                    <input type="text" id="name" placeholder="Your name"  required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6">
+                                <fieldset>
+                                    <input type="email"  id="email" placeholder="Your email"  required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <textarea name="" id="" placeholder="Your message" required=""></textarea>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="main-dark-button"><i
+                                            class="fa fa-paper-plane" ></i></button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------------------section 7 subscribe---------------------------------------- -->
+    <section class="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="sub-head">
+                        <h2>By Subscribing To Our Newsletter You Can Get 30% Off</h2>
+                        <span>Details to details is what makes Hexashop different from the other themes.</span>
+                    </div>
+
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <fieldset>
+                                    <input name="name" type="text" id="name" placeholder="Your Name" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-5">
+                                <fieldset>
+                                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*"
+                                        placeholder="Your Email Address" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-2">
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="main-dark-button">
+                                        <i class="fa fa-paper-plane"></i></button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="ps-0">
+                                <li>Store Location:<br><span>Sunny Isles Beach, FL 33160, United States</span></li>
+                                <li>Phone:<br><span>010-020-0340</span></li>
+                                <li>Office Location:<br><span>North Miami Beach</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>Work Hours:<br><span>07:30 AM - 9:30 PM Daily</span></li>
+                                <li>Email:<br><span>info@company.com</span></li>
+                                <li>Social Media:<br><span><a href="#">Facebook</a>, <a href="#">Instagram</a>,
+                                        <a href="#">Behance</a>, <a href="#">Linkedin</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------footer----------------------------------- -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="address">
+                        <div class="logo">
+                            <img src="assets/white-logo.png" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a>
+                            </li>
+                            <li><a href="#">hexashop@company.com</a></li>
+                            <li><a href="#">010-020-0340</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Shopping &amp; Categories</h4>
+                    <ul>
+                        <li><a href="#">Men’s Shopping</a></li>
+                        <li><a href="#">Women’s Shopping</a></li>
+                        <li><a href="#">Kid's Shopping</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Homepage</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Help &amp; Information</h4>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Tracking ID</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <div class="sub-footer">
+                        <p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved.
+                            <br>Design: <a href="#">TemplateMo</a>
+                            <br>Distributed By: <a href="#">ThemeWagon</a>
+                        </p>
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- ---------------Js------------------ -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+
+
+        $(document).ready(function () {
+            $('.mob-menu , .mob-submenu').hide()
+
+            $('.toggle_icon').click(function () {
+                $('.mob-menu').slideToggle()
+                $(this).find('i').toggleClass('fa-bar fa-times')
+            })
+
+            $('.mob-menu>li> a i').click(function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                $(this).parent().next('.mob-submenu').slideToggle()
+            })
+            // -------------------------------------------------
+            $(window).scroll(function () {
+                var h = $(window).scrollTop()
+                if (h > 150) {
+                    $('header').addClass('fix-header')
+
+                } else {
+                    $('header').removeClass('fix-header')
+
+                }
+            })
+            //scroll to header fix code//------------------------
+            $('#menu-home').first().addClass('active');
+
+        })
+
+    </script>
+</body>
+
+</html>

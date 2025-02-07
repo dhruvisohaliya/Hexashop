@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.single_product{
+    background-image:url('../assets/products-page-heading.jpg');
+    margin-top: 160px;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.single_tex{
+  text-align: center;
+  padding: 150px 0px;
+}
+.single_tex h2 {
+    font-size: 52px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.single_tex span {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+}
+/* ----------------------section pro-detail---------------------------------------- */
+.product{
+    margin-top: 80px;
+}
+ .left-img img {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+ .right-side {
+    position: relative;
+    z-index: 3;
+    background-color: #fff;
+}
+ .right-side h4 {
+    font-size: 22px;
+    color: #2a2a2a;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.right-side span.price {
+    font-size: 18px;
+    color: #a1a1a1;
+    font-weight: 500;
+    display: block;
+    margin-top: 5px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+ .right-side ul.stars {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+ .right-side ul.stars li {
+    display: inline;
+    font-size: 13px;
+}
+ .right-side .p {
+    font-size: 14px;
+    color: #aaaaaa;
+    font-weight: 500;
+    display: block;
+    margin-top: 25px;
+}
+.right-side .quote {
+    margin-top: 25px;
+}
+.right-side .quote i {
+    float: left;
+    font-size: 38px;
+    margin-right: 15px;
+}
+.right-side .quote .quot-pera {
+    font-style: italic;
+    color: #2a2a2a;
+    font-weight: 500;
+    font-size: 14px;
+}
+.quat-content {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    padding-bottom: 80px;
+    margin-bottom: 30px;
+}
+.quat-content .left-content {
+    float: left;
+    margin-right: 30px;
+}
+.quat-content .left-content h6 {
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #aaa;
+    position: relative;
+    z-index: 11;
+}
+.qut.buttons_added {
+    text-align: left;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top;
+}
+.right-content{
+  float: right;
+}
+.right-content .quat-btn button {
+    height: 39px;
+    background-color: rgb(255, 255, 255);
+    padding: 7px 10px 8px;
+    border: 1px solid rgb(239, 239, 239);
+}
+.cnt{
+    display: inline-block; 
+    width: 39px; 
+    text-align: center;
+}
+
+.right-content .quat-btn .cnt{
+    height: 39px;
+    background-color: rgb(255, 255, 255);
+    padding: 7px 12px 8px;
+    border-top: 1px solid rgb(239, 239, 239);
+    border: 1px solid rgb(239, 239, 239);
+    border-left: none;
+    border-right: none;
+}
+.total h4 {
+    float: left;
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: 700;
+    color: rgb(170, 170, 170) !important;
+}
+.total .cart {
+    text-align: right;
+}
+.total .cart a {
+    font-size: 13px;
+    color: rgb(42, 42, 42);
+    display: inline-block;
+    font-weight: 500;
+    border: 1px solid rgb(42, 42, 42);
+    border-image: initial;
+    padding: 12px 25px;
+    transition: 0.3s;
+}
+.quat-btn button:hover{
+ background: #eeeeee; }
+
+ .cart a:hover{
+    background-color: #2a2a2a;
+    color: #fff;
+ }
+ /* -------------------------footer-------------------------------------------- */
+ footer {
+    margin-top: 60px;
+    padding: 60px 0px 30px 0px;
+    background-color: #2a2a2a;
+}
+ footer .logo {
+    margin-bottom: 20px;
+}
+footer ul li {
+    display: block;
+    margin-bottom: 10px;
+}
+footer ul li a {
+    font-size: 14px;
+    color: #fff;
+    transition: all .3s;
+}
+footer h4 {
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+footer ul{
+    padding-left: 0;
+}
+footer .sub-footer {
+    margin-top: 30px;
+    padding-top: 30px;
+    text-align: center;
+    border-top: 1px solid rgba(250, 250, 250, 0.3);
+}
+footer .sub-footer p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+}
+footer .sub-footer ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+footer .sub-footer ul {
+    margin-top: 20px;
+}
+footer .sub-footer a {
+    color: #cff;
+}
+footer .sub-footer a i{
+   font-size: 20px;
+}
+footer .sub-footer a:hover {
+    color: #c66;
+  }
